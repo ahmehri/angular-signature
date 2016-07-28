@@ -97,7 +97,7 @@ angular.module('signature').directive('signaturePad', ['$window', '$timeout',
 
         // listen to touchend event and updateModel when event is fired
         element.on('touchend', function () {
-          scope.$apply(scope.updateModel);
+            scope.$apply(scope.updateModel);
         });
 
         element.on('touchstart', onTouchstart);
